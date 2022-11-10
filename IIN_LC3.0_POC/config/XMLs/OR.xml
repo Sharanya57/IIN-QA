@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Application name="IIN">
+
+<Page name="fakeemail">
+   <Locator name ="Emailvalue" Type ="XPath" Value ="//input[@id='i-email']"/>    
+   <Locator name ="Emailvalue1" Type ="XPath" Value ="//span[@id='email'] "/>
+</Page>  
+
+<Page name="HCTPnewUser">
+   <Locator name ="Emailnamee" Type ="XPath" Value ="//input[@aria-label='Your email']"/>
+   <Locator name ="ContinueButtonNew" Type ="XPath" Value ="//*[text()='Continue']"/>
+   
+</Page>
+
+<Page name="BeginWithIINEnrollment">
+   <Locator name ="IINCreatepassword" Type ="XPath" Value ="//input[@aria-label='Create a password*']"/>
+   <Locator name ="IINConfirmPassword" Type ="XPath" Value ="//input[@aria-label='Confirm password*']"/>
+   <Locator name ="IINfirstname" Type ="XPath" Value ="//input[@aria-label='First name*']"/>
+   <Locator name ="IINmiddlename" Type ="XPath" Value ="//input[@aria-label='Middle name']"/>
+   <Locator name ="IINlastname" Type ="XPath" Value ="//input[@aria-label='Last name*']"/>
+   <Locator name ="IINDOB" Type ="XPath" Value ="//input[@aria-label='Date of birth*']"/>
+   <Locator name ="IINOpenGender" Type ="XPath" Value ="//*[text()='Gender*']/preceding-sibling::div"/>
+   <Locator name ="IINGenderdropdowndata" Type ="CssSelector" Value ="div[id='qvs_1']>div div[class='q-item__label']"/>
+   <Locator name ="IINCountryCode" Type ="XPath" Value ="(//input[@class='q-field__input q-placeholder col'])[1]"/>
+   <Locator name ="IINMobilePhone" Type ="XPath" Value ="//*[text()='Mobile phone*']/preceding-sibling::input"/>
+   <Locator name ="IINAddress" Type ="XPath" Value ="(//*[text()='Shipping address*'])/.. //input[@type='search']"/>
+  
+    <Locator name ="DirectAddressClick" Type ="XPath" Value ="//div[@class='q-item__label']"/>
+  
+  
+   <Locator name ="IINAddressdropdowndata" Type ="CssSelector" Value ="div[id='qvs_3']>div div[class='q-item__label']"/>
+   
+   <Locator name ="IINContinue" Type ="XPath" Value ="//*[text()='Continue']"/>
+ </Page>
+ 
+ 
+ <Page name="Addcoach">
+ 
+  <Locator name ="UsersAdmin" Type ="XPath" Value ="//*[text()='Users']/../.. //i[@role='presentation']"/>
+  <Locator name ="Coaches" Type ="XPath" Value ="//a[@href='/coaches']"/>
+  <Locator name ="AddnewCoach" Type ="XPath" Value ="//*[text()='Add New Coach']"/>
+  <Locator name ="username_email" Type ="XPath" Value ="//input[@aria-label='Username (Email address)']"/>
+   <Locator name ="coach_pass" Type ="XPath" Value ="//input[@aria-label='New Password']"/>
+   <Locator name ="username_pass" Type ="XPath" Value ="//input[@aria-label='Confirm Password']"/>
+   <Locator name ="coachfname" Type ="XPath" Value ="//input[@aria-label='First Name *']"/>
+   <Locator name ="coachlname" Type ="XPath" Value ="//input[@aria-label='Last Name *']"/>
+   <Locator name ="coachdob" Type ="XPath" Value ="//input[@aria-label='Date of Birth *']"/>
+   <Locator name ="GendercoachDropdown" Type ="XPath" Value ="//*[text()='Gender *']"/>
+   <Locator name ="GenderSelectValue" Type ="CssSelector" Value ="div[class='q-virtual-scroll__content'] .q-item__label"/>
+  
+   <Locator name ="Codeselectcountry" Type ="XPath" Value =" //*[text()='Code']/preceding-sibling::div/input"/>
+   
+    <Locator name ="CoachAddress" Type ="XPath" Value ="//*[text()='Address *']/preceding-sibling::div //input"/>
+   
+    <Locator name ="Addresscoachclick" Type ="XPath" Value ="//*[text()='111 Somerset Road, Singapore']"/>
+    <Locator name ="MobilePhoneFill" Type ="XPath" Value ="//input[@aria-label='Mobile Phone *']"/>
+   <Locator name ="SaveCoach" Type ="XPath" Value ="//*[text()='Save']"/>
+   
+  
+</Page> 
+ 
+ 
+  <Page name="EditCoachDetails">
+ 
+  <Locator name ="CoachSearch" Type ="XPath" Value ="//i[@class='las la-search q-icon notranslate']/ancestor::label //input"/>
+  <Locator name ="OpenCoach" Type ="XPath" Value ="//tr[@class='cursor-pointer']"/>
+  <Locator name ="EditCoachButton" Type ="XPath" Value ="//*[text()='Edit']"/>
+   <Locator name ="coachfname_edit" Type ="XPath" Value ="(//input[@aria-label='First Name *'])[2]"/>
+   <Locator name ="coachlname_edit" Type ="XPath" Value ="(//input[@aria-label='Last Name *'])[2]"/>
+   <Locator name ="coachdob_edit" Type ="XPath" Value ="(//input[@aria-label='Date of Birth *'])[2]"/>
+   <Locator name ="GendercoachDropdown_edit" Type ="XPath" Value ="(//*[text()='Gender *'])[2]"/>
+   <Locator name ="GenderSelectValue_edit" Type ="CssSelector" Value ="div[class='q-virtual-scroll__content'] .q-item__label"/>
+  
+   <Locator name ="Codeselectcountry" Type ="XPath" Value =" //*[text()='Code']/preceding-sibling::div/input"/>
+   
+    <Locator name ="CoachAddress" Type ="XPath" Value ="//*[text()='Address *']/preceding-sibling::div //input"/>
+   
+    <Locator name ="Addresscoachclick" Type ="XPath" Value ="//*[text()='111 Somerset Road, Singapore']"/>
+    <Locator name ="MobilePhoneFill_edit" Type ="XPath" Value ="(//input[@aria-label='Mobile Phone *'])[2]"/>
+   <Locator name ="SaveCoach_edit" Type ="XPath" Value ="(//*[text()='Save'])[2]"/>
+   
+  
+</Page> 
+ 
+ 
+ 
+ <Page name="FilterCoach">
+   <Locator name ="ClickFilter" Type ="XPath" Value ="//i[@class='las la-filter q-icon notranslate on-left']"/> 
+   <Locator name ="ClickFilterProfile" Type ="XPath" Value ="//*[text()='Profile']"/>
+   <Locator name ="FirstNameProfile" Type ="XPath" Value ="//input[@aria-label='First Name'] "/>
+   
+   <Locator name ="AgeFilter" Type ="XPath" Value ="//*[text()='Age']"/> 
+   <Locator name ="AgeFilterLeft" Type ="XPath" Value ="//div[contains(@class,'q-slider__thumb')]"/> 
+   <Locator name ="AgeFilterRight" Type ="XPath" Value ="(//div[contains(@class,'q-slider__thumb')])[2]"/> 
+    <Locator name ="AgeFilterLeftText" Type ="XPath" Value ="//span[@class='q-slider__pin-text']"/> 
+    <Locator name ="AgeFilterRightText" Type ="XPath" Value ="(//span[@class='q-slider__pin-text'])[2]"/> 
+   
+   
+  
+  
+   <Locator name ="Genderfilter" Type ="XPath" Value ="//*[text()='Gender']"/> 
+    <Locator name ="GenderfilterMale" Type ="XPath" Value ="//div[@class='q-checkbox__bg absolute']"/> 
+  
+  
+  
+  
+   <Locator name ="Locationfilter" Type ="XPath" Value ="//*[text()='Location']"/> 
+    <Locator name ="LocationfilterPlusicon" Type ="XPath" Value ="//i[@class='las la-plus q-icon notranslate']"/> 
+    <Locator name ="LocationfilterCountry" Type ="XPath" Value ="//input[@aria-label='Country']"/> 
+    
+    
+   
+   
+  
+   
+   <Locator name ="LanguagesFilter" Type ="XPath" Value ="//*[text()='Languages']"/> 
+      <Locator name ="LanguagesFilterEnglish" Type ="XPath" Value ="//*[text()='English']/preceding-sibling::div/div"/> 
+   
+   <Locator name ="CohortsFilter" Type ="XPath" Value ="//*[text()='Cohorts']"/> 
+    <Locator name ="CohortsFilterClick" Type ="XPath" Value ="//input[@type='search']"/> 
+   
+   
+   <Locator name ="ProgramsFilter" Type ="XPath" Value ="(//*[text()='Programs'])[2]"/> 
+   <Locator name ="HasdCoachingCircleFilter" Type ="XPath" Value ="//*[text()='Has Coaching Circle']"/> 
+   <Locator name ="CoachingCircleTypes" Type ="XPath" Value ="//*[text()='Coaching Circles Types']"/> 
+   <Locator name ="CLickViewResults" Type ="XPath" Value ="//*[text()='View Results']"/> 
+    <Locator name ="Coachdetailsgettext" Type ="XPath" Value ="//tr[@class='cursor-pointer']"/> 
+   
+   
+   
+   
+   </Page>
+ 
+ 
+ 
+  
+
+<Page name="CourseandLanguage">
+   <Locator name ="CourseLanguageIIN" Type ="XPath" Value ="//*[text()='Please choose your language and program length']"/> 
+   <Locator name ="IINCourseLanguagedropdown" Type ="XPath" Value ="//*[text()='Language and program track*']/../div[1]"/> 
+   
+    <Locator name ="SelectingProgram" Type ="XPath" Value ="(//*[contains(text(),'The Health Coach Training Program')])[2]"/>
+  
+   <Locator name ="IINCourseLanguagedropdowndata" Type ="XPath" Value ="*[//text()='The Health Coach Training Programᵀᴹ']"/>  
+   <Locator name ="IINNext" Type ="XPath" Value ="(//*[text()='Next'])[2]"/>
+</Page> 
+
+<Page name="IINPersonalInfo">
+
+ <Locator name ="TwoYearCollegeDegree" Type ="XPath" Value ="//*[text()='Two-year college degree']"/>
+  
+    <Locator name ="IINEducationdropdownclick" Type ="XPath" Value ="//*[text()='Highest level of education*']/preceding-sibling::div"/>
+    <Locator name ="IINEducationdropdownvalue" Type ="CssSelector" Value ="div[class='q-virtual-scroll__content']>div div[class='q-item__label']"/>
+    <Locator name ="IINOccupationdropdownclick" Type ="XPath" Value ="//*[text()='Occupation*']/preceding-sibling::div"/> 
+    <Locator name ="IINMilitarycheckbox" Type ="XPath" Value ="//div[@class='q-checkbox__bg absolute']"/> 
+    <Locator name ="Question1" Type ="XPath" Value ="//*[text()=' What is driving you to enroll in The Health Coach Training Program?*']/following-sibling::label"/>
+     <Locator name ="HealMyself" Type ="XPath" Value ="//*[text()='I want to learn to heal myself.']"/>
+ 
+    
+    <Locator name ="Question2" Type ="XPath" Value ="//*[text()=' What are your goals for after completing this program?*']/following-sibling::label"/>
+    <Locator name ="BuildBusiness" Type ="XPath" Value ="//*[text()='Build a health coaching business.']"/>
+   
+    <Locator name ="Question3" Type ="XPath" Value ="//*[text()=' What are 2-3 things you can do to ensure you have a successful experience here at IIN?*']/following-sibling::label"/>
+    <Locator name ="Question3Option1" Type ="XPath" Value ="//*[text()='Follow IIN’s provided Course Schedule.']"/>
+    <Locator name ="Question3Option2" Type ="XPath" Value ="//*[text()='Reach out to IIN’s Student Advisors for support.']"/>
+    <Locator name ="Question4" Type ="XPath" Value ="//*[text()=' As a distance education institution, the content is entirely online. How will you access your program?*']/following-sibling::label"/>
+    <Locator name ="Question4Option1" Type ="XPath" Value ="I’ll use the IIN mobile app."/>
+    <Locator name ="Question4Option2" Type ="XPath" Value ="//*[text()='I’ll study in my home or office.']"/>
+    <Locator name ="NextButtonIIN" Type ="XPath" Value ="//*[text()='Next']"/>
+    
+   
+    
+    
+    
+     
+      </Page>  
+ 
+  <Page name="CoachView">
+ 
+  <Locator name ="CoachUsername" Type ="XPath" Value ="//input[@aria-label='Your email']"/>
+  <Locator name ="CoachContinue" Type ="XPath" Value ="//*[text()='Continue']"/>
+  <Locator name ="CoachePassword" Type ="XPath" Value ="//input[@aria-label='Password']"/>
+  <Locator name ="MyCoachingCirclestext" Type ="XPath" Value ="//div[@class='q-tab__label' and text()='My Coaching Circles']"/>
+  <Locator name ="ReviewCC" Type ="XPath" Value ="//*[text()='Review your coaching circles']"/>
+  <Locator name ="MYCOACHING" Type ="XPath" Value ="//*[text()='My Coaching Circles']"/>
+  <Locator name ="Viewdetails" Type ="XPath" Value ="(//*[contains(text(),'View details')])[2]"/>
+  <Locator name ="ReviewCC1" Type ="XPath" Value ="(//*[text()='Review your coaching circles'])[2]"/>
+  <Locator name ="Sessions" Type ="XPath" Value ="(//*[text()='Sessions'])[2]"/>
+  <Locator name ="CCStudents" Type ="XPath" Value ="(//*[text()='Students'])[2]"/>
+  <Locator name ="logout" Type ="XPath" Value ="//*[text()='Sign Out']"/>
+  <Locator name ="ProfileICON" Type ="XPath" Value ="//div[@class='q-avatar__content row flex-center overflow-hidden']"/>
+  <Locator name ="ViewDetailsClick" Type ="XPath" Value ="//*[contains(text(),'View details')]"/>
+  <Locator name ="Studentclicks" Type ="XPath" Value ="//*[text()='Students']"/>
+   <Locator name ="DownloadRoster" Type ="XPath" Value ="//*[contains(text(),'Download roster')]"/>
+  
+  
+  
+  
+  
+  
+ </Page>  
+  
+  
+      
+ 
+  <Page name="IINPaymentPlanpage">
+   <Locator name ="IINSelectPlanhyperlink" Type ="XPath" Value ="//*[contains(text(),'View plans starting at $ 199/mo')]"/>
+    <Locator name ="IINPaymentPlancircle" Type ="XPath" Value ="//*[text()='$ 199/month payment plan:']/../../i"/>
+    <Locator name ="IINNEXT1" Type ="XPath" Value ="//*[text()='Next']"/> 
+    <Locator name ="IINOK" Type ="XPath" Value ="//*[text()='OK']"/>
+    <Locator name ="IINPaymentdetailsvalidate" Type ="XPath" Value ="//*[text()='Credit Card Information']"/>
+      
+   
+    
+    
+    
+     
+  </Page> 
+  
+  <Page name="AdminCoachingCircle">
+   <Locator name ="username_admin" Type ="XPath" Value ="//input[@type='email']"/>   
+   <Locator name ="password_admin" Type ="XPath" Value ="//input[@type='password']"/>
+   <Locator name = "ContinueButton" Type="XPath" Value ="//*[text()='Continue']"/>
+   <Locator name ="menu_icon" Type ="XPath" Value ="//i[@class='las la-bars q-icon notranslate']"/>
+   <Locator name ="coachingcircle_icon" Type ="XPath" Value ="//*[text()='Coaching Circles']/.."/>
+    <Locator name ="AddnewButton" Type ="XPath" Value ="//*[text()='Add New']"/>  
+   <Locator name ="Typedropdown" Type ="XPath" Value ="//*[text()='Type *']"/>
+   <Locator name ="Typedropdownvalue" Type ="CssSelector" Value ="div[class='q-virtual-scroll__content'] div[class='q-item__label']"/>
+    <Locator name ="Programdropdown" Type ="XPath" Value ="//*[text()='Programs *']"/>
+    <Locator name ="Programdropdowntype" Type ="CssSelector" Value ="div[class='q-virtual-scroll__content'] div[class='q-item__label']"/>
+    <Locator name ="Cohortdropdown" Type ="XPath" Value ="//*[text()='Cohort *']"/>
+    <Locator name ="Cohortdropdowntype" Type ="CssSelector" Value ="div[class='q-virtual-scroll__content'] div[class='q-item__label']"/>
+    <Locator name ="StartDate" Type ="XPath" Value ="//input[@aria-label='Start date *']"/>
+    <Locator name ="StartTime" Type ="XPath" Value ="//input[@aria-label='Start time *']"/>
+    <Locator name ="EndTime" Type ="XPath" Value ="//input[@aria-label='End time *']"/>
+    <Locator name ="OpenDate" Type ="XPath" Value ="//input[@aria-label='Open date']"/>
+    <Locator name ="SaveButtonCC" Type ="XPath" Value ="//*[text()='Save']"/>
+    <Locator name ="CCSessions" Type ="XPath" Value ="//*[text()='Sessions'][1]"/>
+    <Locator name ="GenerateSessions" Type ="XPath" Value ="//*[text()='Generate Sessions']"/>
+    <Locator name ="Coachtab" Type ="XPath" Value ="(//*[text()='Coaches'])[2]"/>
+    <Locator name ="Coachfield" Type ="XPath" Value ="//input[@type='search']"/>
+    <Locator name ="Addicon" Type ="XPath" Value ="//*[text()='Add']"/>
+    <Locator name ="Closeicon" Type ="XPath" Value ="//*[text()='close']"/>
+    
+     
+  </Page> 
+  
+   
+  <Page name="LandingPageAfterLogin">
+   <Locator name ="Course_Enrollment" Type ="XPath" Value ="//*[text()='Course enrollment']"/>     
+</Page>
+  
+  <Page name="StudentCoachingCircle">
+       <Locator name ="Letsgetstarted" Type ="XPath" Value ="//*[contains(text(),'Let’s get started')]"/>
+       <Locator name ="CoachingCircle" Type ="XPath" Value ="//*[text()='Coaching circles']"/>
+       <Locator name="DiveBackIn" Type ="XPath" Value =" //*[text()='Dive back in']"/>
+       <Locator name="SelectCoachingCircle" Type ="XPath" Value ="//*[@class='q-radio__bg absolute non-selectable']"/>
+       <Locator name="CoachingCircleSubmit" Type ="XPath" Value ="//*[text()='Submit']"/>
+       <Locator name="CoachingCircleconfirm" Type ="XPath" Value ="//*[text()='Confirm']"/>
+       <Locator name="SelectCoach" Type ="XPath" Value ="//*[@class='q-chip__content col row no-wrap items-center q-anchor--skip']"/>
+       <Locator name="WebURLLink" Type ="XPath" Value ="//*[contains(text(),' Click here')]"/>
+       <Locator name="CoachingCircleTransfer" Type ="XPath" Value =" //*[(text()='here')]"/>
+       <Locator name="VerifyCoachName" Type ="XPath" Value ="//div[contains(@class,'my-card q-card q-card')] //div[text()[contains(.,'$Val$')]]/ancestor::div[contains(@class,'my-card q-card q-card')]//*[contains(text(),'Select')][1]"/>
+       <Locator name="ChangeCC" Type ="XPath" Value ="//*[text()=' here']"/>
+       <Locator name="clickconfirm" Type ="XPath" Value ="//*[text()='Confirm']"/>
+       
+       </Page>
+       
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   
+<Page name="LandingPageAfterLogin">
+   <Locator name ="Course_Enrollment" Type ="XPath" Value ="//*[text()='Course enrollment']"/>     
+</Page>
+
+<Page name="LoginPage">
+   <Locator name ="firstname" Type ="XPath" Value ="//input[@aria-label='First name *']"/>   
+   <Locator name ="lastname" Type ="XPath" Value ="//input[@aria-label='Last name *']"/>
+   <Locator name ="username" Type ="XPath" Value ="//input[@aria-label='Username (Email address) *']"/>
+   <Locator name ="password" Type ="XPath" Value ="//input[@aria-label='Password *']"/>
+   <Locator name ="confirmPassword" Type ="XPath" Value ="//input[@aria-label='Confirm Password *']"/>
+ 
+    <Locator name ="LOGIN" Type="XPath" Value ="(//*[text()='Login'])[1]"/>
+
+
+<Locator name ="UsernameEmail" Type="XPath" Value ="//input[@aria-label='Your email']"/>
+<Locator name ="UserPassword" Type="XPath" Value ="//input[@aria-label='Password']"/>
+
+<Locator name = "ContinueButton" Type="XPath" Value ="//*[text()='Continue']"/>
+<Locator name = "SignButton" Type="XPath" Value ="//*[text()='Sign']"/>
+<Locator name = "CompleteButton" Type="XPath" Value ="(//button)[7]"/>
+<Locator name = "MyCourseiin" Type="XPath" Value ="//*[text()='My Courses']"/>
+
+
+ 
+   
+   
+</Page>
+
+
+
+
+<Page name="CommunicationPreferences">
+
+<Locator name ="communicationPreferencePage" Type="XPath" Value ="//*[text()='Communication Preferences']"/>
+
+
+<Locator name ="Email" Type="XPath" Value ="//*[text()='Email']/../following-sibling::div/div"/>
+<Locator name ="EmailGetAttributeClass" Type="XPath" Value ="//*[text()='Email']/../following-sibling::div/div/div"/>
+ 
+
+<Locator name ="VoiceMail" Type="XPath" Value ="//*[text()='Voice Mail']/../following-sibling::div/div"/>
+<Locator name ="VoiceMailGetAttributeClass" Type="XPath" Value ="//*[text()='Voice Mail']/../following-sibling::div/div/div"/>
+ 
+<Locator name ="SMS" Type="XPath" Value ="//*[text()='SMS']/../following-sibling::div/div"/>
+<Locator name ="SMSGetAttributeClass" Type="XPath" Value ="//*[text()='SMS']/../following-sibling::div/div/div"/>
+ 
+ <Locator name ="WhatsApp" Type="XPath" Value ="//*[text()='WhatsApp']/../following-sibling::div/div"/>
+<Locator name ="WhatsAppGetAttributeClass" Type="XPath" Value ="//*[text()='WhatsApp']/../following-sibling::div/div/div"/>
+ 
+ 
+  
+  
+  
+ 
+
+
+
+
+</Page>
+
+
+
+
+
+
+
+
+
+
+<Page name="PaymentInformation">
+
+<Locator name ="EditButtonClick" Type="XPath" Value="(//*[text()='Edit'])[2]"/>
+<Locator name ="EditCardExpirationDate" Type="XPath" Value="//input[@placeholder='MM / YYYY']"/>
+<Locator name ="SaveTheCard" Type="XPath" Value="//*[text()='Save Credit Card']"/>
+
+
+<Locator name ="RemoveButton" Type="XPath" Value ="//*[text()='Make primary payment method']/ancestor::div[@class='q-card__section q-card__section--vert']/.. //*[text()='Remove']
+"/>
+
+
+<Locator name ="ValidationMessageCardRemoval" Type="XPath" Value ="//*[text()='Payment method removed.']"/>
+
+
+<Locator name ="PrimaryPaymentVisibility" Type="XPath" Value ="//*[contains(text(),'Name on card')]"/>
+
+
+
+<Locator name ="PrimaryPayment" Type="XPath" Value ="//*[text()='Make primary payment method']"/>
+
+<Locator name ="YesButton" Type="XPath" Value ="//*[text()='Yes, I am sure']"/>
+
+<Locator name ="PaymentInformation_" Type="XPath" Value ="//*[text()='My Payments']"/>
+
+<Locator name ="BAddressbox" Type="XPath" Value ="(//div[@class='q-checkbox__bg absolute'])[6]"/>
+
+
+<Locator name ="CHECKBOX_" Type="XPath" Value ="//*[text()='Same as Mailing Address']/.. //input/.."/>
+<Locator name ="CardBillingAddressClick" Type="XPath" Value ="(//*[contains(text(),'Billing address')]/preceding-sibling::div)[2]"/>
+<Locator name ="CardBillingAddressInput" Type="XPath" Value ="(//*[contains(text(),'Billing address')]/preceding-sibling::div //input)[2]"/>
+<Locator name ="CardBillingAdressValidate" Type="XPath" Value ="(//*[text()='Billing address'])[2]/following-sibling::div"/>
+<Locator name ="CardExpirationdateValidate" Type="XPath" Value ="(//*[text()='Expiration Date'])[2]/following-sibling::div"/>
+<Locator name ="NameValidate" Type="XPath" Value ="(//*[text()='Name on card'])[2]/following-sibling::div"/>
+
+
+
+
+<Locator name ="Wallet" Type="XPath" Value ="//*[text()='Payment Method']"/>
+<Locator name ="AddPaymentMethod" Type="XPath" Value ="//*[text()='Add payment method']"/>
+<Locator name ="AddCards" Type="XPath" Value ="(//div[@class='text-weight-medium text-orange-01 cursor-pointer'])[1]"/>
+   
+   
+ <Locator name ="AddPaymentMethod" Type="XPath" Value ="//form[@novalidate='novalidate'] //*[text()='Add payment method']"/>   
+   
+<Locator name ="NameOnTheCard" Type="XPath" Value ="//input[@aria-label='Name on card*']"/>   
+<Locator name ="CardNumber" Type="XPath" Value ="//input[@aria-label='Credit or debit card number']"/>
+<Locator name ="ExpirationDate" Type="XPath" Value ="//input[@placeholder='MM / YY']"/>
+<Locator name ="CVC" Type="XPath" Value ="//input[@placeholder='CVC']"/>
+<Locator name ="AddPaymentButton" Type="XPath" Value ="//*[text()='Add payment method']"/>
+<Locator name ="CompleteButtonPayment" Type="XPath" Value ="//button[@type='submit'][@tabindex='0']"/>
+
+
+<Locator name ="iframeCardNumber" Type="XPath" Value ="//iframe[@title='Secure card number input frame']"/>
+<Locator name ="iframeCVC" Type="XPath" Value ="//iframe[@title='Secure CVC input frame']"/>
+
+<Locator name ="iframeDate" Type="XPath" Value ="//iframe[@title='Secure expiration date input frame']"/>
+
+ 
+<Locator name ="Name" Type="XPath" Value ="//*[contains(text(),'Nikita')]"/>
+
+<!-- Prepay Locators -->
+
+<Locator name ="CurrentOwedAmount" Type="XPath" Value ="//*[text()='Current balance owed']/following-sibling::div"/>
+<Locator name ="MakeApayment" Type="XPath" Value ="//*[text()='Make a Payment']"/>
+<Locator name ="MakePayment" Type="XPath" Value ="//*[text()='Make Payment']"/>
+<Locator name ="PrePay" Type="XPath" Value ="//*[text()='Pre-Pay']"/>
+<Locator name ="AmountToBePaid" Type="XPath" Value ="//*[text()='Pre-Pay']/ancestor::button/.. //input"/>
+<Locator name ="Amount" Type="XPath" Value ="//*[contains(text(),'Capital One')]/../preceding-sibling::div/.. //*[text()='Amount']/following-sibling::div"/>
+<Locator name ="Tax_Amount" Type="XPath" Value ="//*[contains(text(),'Capital One')]/../preceding-sibling::div/.. //*[text()='Tax Amount']/following-sibling::div"/>
+<Locator name ="Total_To_Be_Paid" Type="XPath" Value ="//*[contains(text(),'Capital One')]/../preceding-sibling::div/.. //*[text()='Total To Be Paid']/following-sibling::div"/>
+<Locator name ="SubmitPayment" Type="XPath" Value ="//*[contains(text(),'Submit Payment')]"/>
+<Locator name ="ThanksMessagePayment" Type="XPath" Value ="//*[text()='Thanks for your Payment']"/>
+<Locator name ="Closepopup" Type="XPath" Value ="//*[text()='Thanks for your Payment']/../../.. //i[@role='img']"/>
+<Locator name ="TotalPaidToDate" Type="XPath" Value ="//*[text()='Total Paid to Date']/.. /following-sibling::div"/>
+<Locator name ="DepositAmount" Type="XPath" Value ="//*[contains(text(),'Credit Card (Last 4 digits):')]/ancestor::tr //*[contains(text(),'$')]"/>
+<Locator name ="PaymentPlanTermsPage" Type="XPath" Value ="//*[text()='Payment Plan Terms']"/>
+<Locator name ="PaymentScheduleAmounts" Type="XPath" Value ="//table[@class='q-table'] //div[starts-with(@class,'q-chip__content')]"/>
+
+
+</Page>
+
+
+ <Page name="SSOFunctionality">
+ 
+   <Locator name ="MyCourse" Type="XPath" Value ="//*[text()='My Courses']"/>
+   <Locator name ="ContinueLearning" Type="XPath" Value ="//*[text()='Continue Learning']"/>
+   <Locator name ="ModuleName" Type="XPath" Value ="//span[@class='cursor-pointer']"/>
+   <Locator name ="StartButtonClick" Type="XPath" Value ="//span[@class='cursor-pointer']/../../.. //*[text()='Start']"/>
+   
+     
+ 
+ 
+ </Page>
+
+
+
+ 
+  <Page name="SelectClassPage">
+    <Locator name ="selectClass" Type ="XPath" Value ="(//div[@class='q-stepper__title'])[1]"/> 
+   <Locator name ="SelectCourse" Type ="XPath" Value ="(//div[@class='column justify-between full-height full-width'])[2]"/> 
+  <Locator name ="NextButtonSelectClass" Type ="XPath" Value ="(//span[@class='block'])[1]"/> 
+  
+<Locator name ="ManageAccount" Type="XPath" Value ="//*[text()='Manage account']"/>
+
+<Locator name ="ProfileIcon" Type="XPath" Value ="//div[@class='q-avatar__content row flex-center overflow-hidden']"/>
+ <Locator name ="WelcomePopup" Type="XPath" Value ="//div[@class='q-notification__message col']"/>
+  
+<Locator name ="TakeaTourPopup" Type="XPath" Value ="//a[@aria-label='Close modal']"/>
+<Locator name ="TakeaTourPopupIframe" Type="XPath" Value ="//iframe[@role='dialog']"/>
+  
+
+
+
+</Page>  
+
+<Page name="ProfilePage">
+
+
+
+<Locator name ="AllDates" Type ="XPath" Value ="//div[contains(@class,'item--in')]"/> 
+  
+  <Locator name ="CalendarClick" Type ="XPath" Value ="//*[text()='Date of birth *']/../following-sibling::div/i"/> 
+    
+        <Locator name ="CalendarYearCheck" Type ="XPath" Value ="//div[@class='relative-position overflow-hidden flex flex-center'] //span[@class='block']"/> 
+      <Locator name ="CalendarYearNavigateBackButton" Type ="XPath" Value ="(//i[@class='material-icons q-icon notranslate' and text()='chevron_left'])[2]"/> 
+   <Locator name ="CalendarYearNavigateForward" Type ="XPath" Value ="//div[@class='relative-position overflow-hidden flex flex-center'] //span[@class='block'] //ancestor::div[contains(@class,'relative-position ')]/following-sibling::div"/> 
+    
+    <Locator name ="CalendarMonthClick" Type ="XPath" Value ="//div[@class='relative-position overflow-hidden flex flex-center col'] //span[@class='block']"/> 
+ 
+     <Locator name ="GetAllMonthsName" Type ="XPath" Value ="//div[@class='q-date__months-item flex flex-center'] //span[@class='block']"/> 
+   
+     
+
+ <Locator name ="chooseFile" Type="XPath" Value ="//a[@role='link'] //*[@role='img']"/> 
+ 
+     
+<Locator name ="BillingAddress" Type="XPath" Value ="(//*[text()='Mailing Address'])[2]/.. //input[@type='text']"/> 
+<Locator name ="BillingAddressList" Type="CssSelector" Value ="div[class='q-virtual-scroll__content']>div div[class='q-item__label']"/> 
+
+
+<Locator name ="MailingAddress" Type="XPath" Value ="//*[text()='Address *']/.. //input"/> 
+<Locator name ="MailingAddressList" Type="CssSelector" Value ="div[class='q-virtual-scroll__content'] >div  div[class='q-item__label']"/> 
+
+<Locator name ="ImagePresence" Type="XPath" Value ="//div[contains(@style,'imagename')]"/> 
+
+
+
+
+
+<Locator name ="ResetPassword" Type="XPath" Value ="//div[contains(@class,'flex justify')] //*[text()='Reset Password']"/> 
+
+<Locator name ="NewPassword" Type="XPath" Value ="//input[@aria-label='New password']"/> 
+<Locator name = "ConformPassword" Type="XPath" Value ="//input[@aria-label='Confirm password']"/> 
+
+<Locator name ="CurrenttPassword" Type="XPath" Value ="//input[@aria-label='Current password']"/> 
+
+<Locator name ="SaveResetPassword" Type="XPath" Value ="//div[@class='text-h6 text-weight-bold']/following-sibling::div[contains(@class,'flex justify')] //*[@type='submit']"/> 
+
+<Locator name ="SaveProfile" Type="XPath" Value ="//div[@class='q-mt-sm'] //*[text()='Save']"/> 
+
+ 
+
+<Locator name ="ResetPasswordPopup" Type="XPath" Value ="//*[text()='Your password was reset successfully.']"/> 
+
+ 
+<Locator name ="ProfileIcon" Type="XPath" Value ="//div[@class='q-avatar__content row flex-center overflow-hidden']"/>
+
+<Locator name = "LogOut" Type="XPath" Value ="//*[text()='Sign Out']"/>
+
+ <Locator name ="ShowPass" Type ="XPath" Value ="//*[text()='visibility_off']"/>   
+   
+  
+  
+  
+  <Locator name =  "EditButtonType" Type ="XPath" Value ="//*[text()='Edit']"/> 
+
+<Locator name = "AttachImage" Type ="XPath" Value ="//input[@accept='image/*']"/> 
+
+<Locator name = "CrossIconRemoveImage" Type ="XPath" Value ="//i[@class='lar la-times-circle q-icon notranslate']"/> 
+
+  
+  
+  
+ <Locator name = "Fname" Type="XPath" Value ="//input[@aria-label='First name *']"/> 
+
+<Locator name = "Mname" Type="XPath" Value ="//input[@aria-label='Middle name']"/> 
+
+<Locator name = "Lname" Type="XPath" Value ="//input[@aria-label='Last name *']"/> 
+
+<Locator name = "CalendarOpen" Type="XPath" Value ="//*[text()='Date of Birth *']/../following-sibling::div"/> 
+   
+ <Locator name = "GenderPopUp" Type="XPath" Value ="//*[text()='Gender *']/preceding-sibling::div"/> 
+    
+ 
+ <Locator name ="EducationLevelDropdown" Type ="XPath" Value ="//*[text()='Highest level of education']/preceding-sibling::div"/> 
+  <Locator name ="EducationLevelDropdownData" Type ="CssSelector" Value ="div[class='q-virtual-scroll__content']>div div[class='q-item__label']"/> 
+ 
+  
+  
+  <Locator name ="OccupationDropdown" Type ="XPath" Value ="//*[text()='Occupation']/preceding-sibling::div"/> 
+   
+  
+   <Locator name ="Genderlist" Type ="CssSelector" Value ="div[class='q-virtual-scroll__content'] div[class='q-item__label']"/> 
+   
+   
+  <Locator name ="CountryCodeMobilePhone" Type ="XPath" Value ="(//input[@class='q-field__input q-placeholder col'])[1]"/> 
+   <Locator name ="MobilePhoneNumber" Type ="XPath" Value ="//*[text()='Mobile Phone *']/preceding-sibling::input"/> 
+   
+   
+   
+   <Locator name ="CountryCodeHomePhone" Type ="XPath" Value ="(//input[@class='q-field__input q-placeholder col'])[2]"/> 
+    <Locator name ="HomePhoneNumber" Type ="XPath" Value ="//*[text()='Home Phone']/preceding-sibling::input"/> 
+   
+   <Locator name ="CountryCodeWorkPhone" Type ="XPath" Value ="(//input[@class='q-field__input q-placeholder col'])[3]"/> 
+   <Locator name ="WorkPhoneNumber" Type ="XPath" Value ="//*[text()='Work Phone']/preceding-sibling::input"/> 
+   
+   <Locator name ="GetValuesProfilePage" Type ="XPath" Value ="//div[@class='q-item__section column q-item__section--top q-item__section--main justify-start'] //div[@class='q-item__label']"/> 
+    
+    </Page>
+
+
+<Page name="SpecialitySelectCoursePage">
+   <Locator name ="selectDYLcourse" Type ="XPath" Value ="(//div[@class='q-radio__inner relative-position q-radio__inner--falsy'])[1]"/> 
+   <Locator name ="nextButton" Type ="XPath" Value ="//*[text()='Next']"/>   
+  
+</Page>
+
+
+<Page name="ReadandSignAgreement">
+
+   <Locator name ="TOS" Type ="XPath" Value ="//*[text()='Pending Signing Requests']"/> 
+   <Locator name ="signatureButton" Type ="XPath" Value ="//*[text()='Sign']"/>
+   <Locator name ="iAgreebutton" Type ="XPath" Value ="//input[@type='checkbox']"/>
+   <Locator name ="continueButton" Type ="XPath" Value ="//*[text()='Continue']"/>
+   <Locator name ="startButton" Type ="XPath" Value ="(//*[text()='Start'])[2]"/>
+   <Locator name ="signInboxButton" Type ="XPath" Value ="(//*[text()='Sign'])[2]"/>
+   <Locator name ="adoptAndsignButton" Type ="XPath" Value ="//*[text()='Adopt and Sign']"/>
+   <Locator name ="finishTabbutton" Type ="XPath" Value ="(//*[text()='Finish'])[1]"/>
+   <Locator name ="nextButtonSpeciality" Type ="XPath" Value ="//*[text()='Next']"/>
+   <Locator name ="ContinueButtonPopUp" Type ="XPath" Value ="//*[text()='Continue']"/>
+   
+   </Page>
+   
+   <Page name="PaymentMethods">
+   <Locator name ="paymentDetails" Type ="XPath" Value ="//*[text()='Enter the details']"/>
+   
+<Locator name ="SameAsMailingCheckbox" Type="XPath" Value ="//*[text()='Same as Mailing Address']"/>
+
+<Locator name ="NameonCardtab" Type="XPath" Value ="//input[@aria-label='Name on the Card*']"/>   
+<Locator name ="cardnumbertab" Type="XPath" Value ="//input[@aria-label='Credit or debit card number']"/>
+<Locator name ="ExpirationDatetab" Type="XPath" Value ="//input[@placeholder='MM / YY']"/>
+<Locator name ="CVCtab" Type="XPath" Value ="//input[@placeholder='CVC']"/>
+
+
+<Locator name ="iframeCardNumbertab" Type="XPath" Value ="//iframe[@title='Secure card number input frame']"/>
+<Locator name ="iframeCVCtab" Type="XPath" Value ="//iframe[@title='Secure CVC input frame']"/>
+
+<Locator name ="iframeDatetab" Type="XPath" Value ="//iframe[@title='Secure expiration date input frame']"/>
+
+<Locator name ="FinishEnrollingButton" Type="XPath" Value ="//*[text()='Finish Enrolling']"/>
+<Locator name ="CongratulationPage" Type="XPath" Value ="//*[text()='Congratulations and Welcome to Detox Your Life']"/>
+
+   </Page>
+   
+  
+   <Page name="SpecialitySSO">
+ 
+   <Locator name ="MyCoursetab" Type="XPath" Value ="//*[text()='My Courses']"/>
+   <Locator name ="ContinueLearningtab" Type="XPath" Value ="//*[text()='Continue Learning']"/>
+   <Locator name ="ModuleNametext" Type="XPath" Value ="//span[@class='cursor-pointer']"/>
+   <Locator name ="StartButtonClickbutton" Type="XPath" Value ="//span[@class='cursor-pointer']/../../.. //*[text()='Start']"/>
+   
+     
+<Locator name ="TakeaTourPopupwindow" Type="XPath" Value ="//a[@aria-label='Close modal']"/>
+<Locator name ="TakeaTourPopupIframewindow" Type="XPath" Value ="//iframe[@role='dialog']"/>
+ 
+ </Page>
+   
+   
+
+
+
+<Page name="AdminPortalLogin">
+   <Locator name ="username_admin" Type ="XPath" Value ="//input[@type='email']"/>   
+   <Locator name ="password_admin" Type ="XPath" Value ="//input[@type='password']"/>
+   <Locator name ="continue_admin" Type ="XPath" Value ="//*[text()='Continue']"/>
+   <Locator name ="dashboard_text" Type ="XPath" Value ="//div[@class='row justify-between'] //div[contains(@class,'text-h5')]"/>
+   <Locator name ="menu_icon" Type ="XPath" Value ="//i[@class='las la-bars q-icon notranslate']"/>
+   <Locator name ="admissions_lefticon" Type ="XPath" Value ="//*[text()='Admissions']/../preceding-sibling::div[contains(@class,'justify-center')]"/>
+   <Locator name ="admissions_Click" Type ="XPath" Value ="//*[text()='Admissions']"/>
+   <Locator name ="Enrollments_click" Type ="XPath" Value ="//*[text()='Enrollments']"/>
+   <Locator name ="Enrollments_searchfield" Type ="XPath" Value ="//i[contains(@class,'la-search')]/../following-sibling::div //input"/>
+   <Locator name ="OpenStudent" Type ="XPath" Value ="//td[contains(text(),'@')]"/>
+   <Locator name ="clickApprove" Type ="XPath" Value ="//*[text()='Approve']"/>
+    
+</Page>
+
+
+
+<Page name="AdminPortalTransfer">
+    <Locator name ="Transfermenu_icon" Type ="XPath" Value ="//i[@class='las la-bars q-icon notranslate']"/>
+    <Locator name ="TransferUsers" Type ="XPath" Value ="//*[text()='Users']/../.. //i[@role='presentation']"/>
+    <Locator name ="AdminStudent" Type ="XPath" Value ="//*[text()='Students']"/>
+    <Locator name ="Studentsearch" Type ="XPath" Value =" //i[@class='las la-search q-icon notranslate']/ancestor::label //input"/>
+    <Locator name ="faceicon" Type ="XPath" Value ="//tr[@class='cursor-pointer']"/>
+    <Locator name ="Adminpayinfo" Type ="XPath" Value ="//aside[contains(@class,'q-drawer q-drawer--right q-drawer--standard')] //*[text()='Payment Information']"/>
+    <Locator name ="Adminplan" Type ="XPath" Value ="//*[text()='Payment Plan Terms']"/>
+    <Locator name ="Transferstutab" Type ="XPath" Value ="//*[text()='Transfer student']"/>
+    <Locator name ="Transfertodropdown" Type ="XPath" Value ="//*[text()='Select cohort']"/>
+    <Locator name ="Transfertoselect" Type ="XPath" Value ="//*[text()='The Health Coach Training Programᵀᴹ']"/>
+    <Locator name ="tselectpaymentplan" Type ="XPath" Value ="//*[text()='Select payment plan']"/>
+    <Locator name ="tselectpaymentplandropdown" Type ="XPath" Value ="//*[text()='39 months at $199 Tuition price: 7672']"/>
+    <Locator name ="Transfercomment" Type ="XPath" Value ="//textarea"/>
+    <Locator name ="Transferbutton" Type ="XPath" Value ="//*[text()='Transfer']"/>
+    <Locator name ="Closebutton" Type ="XPath" Value ="(//*[text()='close'])[2]"/>
+</Page>
+ 
+ 
+ <Page name="AdminPortalWithdrawal">
+    <Locator name ="WDmenu_icon" Type ="XPath" Value ="//i[@class='las la-bars q-icon notranslate']"/>
+    <Locator name ="WDUsers" Type ="XPath" Value ="//*[text()='Users']/../.. //i[@role='presentation']"/>
+    <Locator name ="WDStudenticon" Type ="XPath" Value ="//*[text()='Students']"/>
+    <Locator name ="searchbar" Type ="XPath" Value =" //i[@class='las la-search q-icon notranslate']/ancestor::label //input"/>
+    <Locator name ="avatar" Type ="XPath" Value ="//tbody //div[@class='q-avatar']"/>
+    <Locator name ="WDpayinfo" Type ="XPath" Value ="//*[text()='Payment Information']"/>
+    <Locator name ="WDplan" Type ="XPath" Value ="//*[text()='Payment Plan Terms']"/>
+    <Locator name ="WDstudenttab" Type ="XPath" Value ="//*[text()='Withdraw student']"/>
+ 
+ <Locator name ="WDReasontab" Type ="XPath" Value ="//*[text()='Withdrawal Reason']"/>
+ <Locator name ="WDReasonlistselect" Type ="XPath" Value ="//*[text()='FIN - Collections']"/>
+ <Locator name ="WDReasondetailtab" Type ="XPath" Value ="//*[text()='Withdrawal Reason Detail']"/>
+ <Locator name ="WDReasondetaillist" Type ="XPath" Value ="//*[text()='No Past Due Outreach']"/>
+ <Locator name ="WDComments" Type ="XPath" Value ="//*[text()='Withdrawal comments']"/>
+ <Locator name ="enterWDcomments" Type ="XPath" Value ="//textarea"/>
+ <Locator name ="WD" Type ="XPath" Value ="//*[text()='Withdraw']"/>
+ <Locator name ="WDDropdown" Type ="XPath" Value ="//div[@class='q-menu q-position-engine scroll']"/>
+ 
+ </Page>
+ 
+ <Page name="PaymentMethod">
+ 
+ <Locator name ="removecc" Type ="XPath" Value ="//*[text()='Remove']"/>
+ <Locator name ="popuptext" Type ="XPath" Value ="//*[text()='You cannot remove your payment method as you have an active payment plan for The Health Coach Training Programᵀᴹ Accelerated.']"/>
+ 
+<Locator name ="ClickGotIT" Type ="XPath" Value ="//*[text()='Got it']"/>
+
+  </Page>
+ 
+<Page name="PersonalInfoPage">
+
+
+    
+    <Locator name ="CountryCode" Type ="XPath" Value ="//*[text()='Code']"/> 
+   
+     <Locator name ="genderDropdownClick" Type ="XPath" Value ="(//div[@class='q-field__native row items-center'])[1]"/> 
+    <Locator name ="OccupationClick" Type ="XPath" Value ="(//i[@role='presentation'])[20]"/> 
+   
+  
+     <Locator name ="genderAllCategories" Type ="XPath" Value ="//div[@class='q-item__label']"/> 
+ 
+  <!-- 
+    <Locator name ="CalendarClick" Type ="XPath" Value ="(//div[@class='q-field__inner relative-position col self-stretch'])[5]/div[1]/div[2]"/> 
+    --> 
+    <Locator name ="PersonalDetails" Type ="XPath" Value =" //div[@class='text-subtitle1 text-center q-mb-xs']"/> 
+    <Locator name ="NextButtonPersonalInfo" Type ="XPath" Value ="(//span[@class='block'])[2]"/> 
+   <!--  <Locator name ="CalendarYearCheck" Type ="XPath" Value ="//div[@class='relative-position overflow-hidden flex flex-center'] //span[@class='block']"/> 
+      <Locator name ="CalendarYearNavigateBackButton" Type ="XPath" Value ="//div[@class='q-date__view q-date__calendar']/div[1]/div[4]/button/span[2]/span/i"/> 
+   <Locator name ="CalendarYearNavigateForward" Type ="XPath" Value ="(//*[text()='chevron_right'])[4]"/> 
+     <Locator name ="CalendarMonthNavigateBackWard" Type ="XPath" Value ="//div[@class='q-date__view q-date__calendar']/div[1]/div[1]"/> 
+  
+    <Locator name ="CalendarMonthClick" Type ="XPath" Value ="//div[@class='q-date__view q-date__calendar']/div[1]/div[2]/div/button/span[2]/span/span"/> 
+ 
+     <Locator name ="GetAllMonthsName" Type ="XPath" Value ="//div[@class='q-date__view q-date__months flex flex-center']/div/button/span[2]/span/span"/> 
+   
+     <Locator name ="GetAllDates" Type ="XPath" Value ="//div[@class='q-date__view q-date__calendar']/div[3]/div/div"/> 
+      -->
+   <!--     <Locator name ="
+Dropdown" Type ="XPath" Value ="(//div[@class='q-field__native row items-center'])[2]"/> 
+  
+  
+   
+   <Locator name ="GenderDropdownClick" Type ="XPath" Value ="(//div[@class='q-field__label no-pointer-events absolute ellipsis'])[6]"/> 
+ 
+   <Locator name ="PhoneNumberTextbox" Type ="XPath" Value ="//input[@type='tel']"/> 
+  
+  <Locator name ="AddressTextBox" Type ="XPath" Value ="//input[@type='search']"/> 
+   -->
+  
+
+        
+ 
+</Page>
+ 
+<!-- <Page name="AdmissionsRequirementsPage">
+
+
+
+<Locator name ="Question1" Type ="XPath" Value ="(//input[@type='text'])[2]"/> 
+<Locator name ="Question2" Type ="XPath" Value ="(//input[@type='text'])[3]"/> 
+  <Locator name ="Question3" Type ="XPath" Value ="(//input[@type='text'])[4]"/> 
+  <Locator name ="Question4" Type ="XPath" Value ="(//input[@type='text'])[5]"/> 
+  <Locator name ="NextButtonAdmissionPage" Type ="XPath" Value ="(//span[contains(@class,'block')])[2]"/> 
+    
+
+   
+</Page> 
+   -->
+</Application>
