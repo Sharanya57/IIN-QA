@@ -112,4 +112,9 @@ public class TestProperties {
 	public int getwaitTime(){
 		return Integer.parseInt(waitTime);
 	}
+
+	//public String getRefreshUrl() {
+		// TODO Auto-generated method stub
+		//return null;
+	
 }
