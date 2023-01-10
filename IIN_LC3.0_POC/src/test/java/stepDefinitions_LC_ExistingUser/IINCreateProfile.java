@@ -17,7 +17,7 @@ public class IINCreateProfile extends SeleniumFunctions{
 	
 	}
 	
-	@When("user Enters the {string} test")
+	@When("user Enters the {string}")
 	public void user_enters_the(String password) throws Exception {
 	   //Entering the create password and confirm password.  
 	  Page("BeginWithIINEnrollment").clickElement("IINCreatepassword");
@@ -26,7 +26,7 @@ public class IINCreateProfile extends SeleniumFunctions{
 	  Page("BeginWithIINEnrollment").sendKeysToElement("IINConfirmPassword", password);
 	  
 	}
-	@When("User Enters {string},{string},{string} test")
+	@When("User Enters {string},{string},{string}")
 	public void user_enters(String fname, String mname, String lname) throws Exception {
 		//Entering the first name
 		 Page("BeginWithIINEnrollment").clickElement("IINfirstname"); 
@@ -65,7 +65,7 @@ public class IINCreateProfile extends SeleniumFunctions{
 		
 		
 	}
-	@When("User clicks to Continue Button test")
+	@When("User clicks to Continue Button")
 	public void user_clicks_to_continue_button() throws Exception {
 		Page("BeginWithIINEnrollment").clickElement("IINContinue");
 		Thread.sleep(5000);

@@ -9,8 +9,8 @@ import io.cucumber.java.en.When;
 public class newUser extends SeleniumFunctions {
 	String Email;
 	
-	@When("user takes one Email from the website")
-	public void user_takes_one_Email_from_the_website() throws Exception {
+	@When("user takes one Email from the fakemail website")
+	public void user_takes_one_Email_from_the_fakeemail_website() throws Exception {
 
 
 		try {
@@ -25,12 +25,12 @@ public class newUser extends SeleniumFunctions {
 	
 	}
 	
-	@When("Student is on Student Portal for speciality course")
-	public void Student_is_on_Student_Portal_for_speciality_course() throws Exception {
+	@When("Student is on Student Portal")
+	public void Student_is_on_Student_Portal() throws Exception {
 
 
 		try {
-			NavigateToURL(TestProperties.getInstance().getBaseUrl_hctp());
+			NavigateToURL(TestProperties.getInstance().getBaseUrl_Studentlogin());
 			LoadApplication();
 		} catch (Exception e) {
 

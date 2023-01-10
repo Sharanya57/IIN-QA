@@ -12,10 +12,10 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(stepNotifications=true,monochrome = true,dryRun=false,
 features =
-{"src/test/java/LC3_NewUserFeatures1/"},
+{"src/test/java/LC3_NewUserFeatures/"},
 plugin =  {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}, 
 
-glue = {"stepDefinitions_LC_ExistingUser"})    
+glue = {"src/test/java/stepDefinitions_LC_ExistingUser"})    
 
 
 public class TestRunnerTest extends Hooks {
